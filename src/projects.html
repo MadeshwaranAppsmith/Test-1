@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Work — Studio</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.45/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav" role="navigation" aria-label="Main">
+        <a class="logo" href="./index.html" aria-label="Studio Home">
+          <img src="/assets/logo.svg" alt="" width="22" height="22" />
+          <span>Studio</span>
+        </a>
+        <nav class="nav-links" aria-label="Site">
+          <a href="./projects.html" aria-current="page" class="badge" data-magnet data-cursor="Work">Work</a>
+          <a href="./about.html" data-magnet data-cursor="About Us">About</a>
+          <a href="./contact.html" data-magnet data-cursor="Contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="lenis-root">
+      <section class="hero container">
+        <h1 class="hero-title"><span data-hero-title><span>Selected</span> <span>Projects</span></span></h1>
+        <p class="hero-subtitle" data-hero-subtitle>
+          Three sample entries demonstrating hover-driven reveals, parallax, and links to case studies.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="grid">
+            <a class="card card--wide" href="./project/project-alpha.html" data-reveal data-magnet data-cursor="Open">
+              <div class="card-media"><img src="/assets/placeholder-wide.svg" alt="" /></div>
+              <div class="card-body">
+                <div><div class="card-title">Project Alpha</div><div class="card-meta">Web • Motion</div></div>
+                <div class="card-pill">Case Study</div>
+              </div>
+            </a>
+            <a class="card card--half" href="./project/project-beta.html" data-reveal data-magnet data-cursor="Open">
+              <div class="card-media"><img src="/assets/placeholder-wide.svg" alt="" /></div>
+              <div class="card-body">
+                <div><div class="card-title">Project Beta</div><div class="card-meta">Narrative • WebGL</div></div>
+                <div class="card-pill">Case Study</div>
+              </div>
+            </a>
+            <a class="card card--half" href="./project/project-gamma.html" data-reveal data-magnet data-cursor="Open">
+              <div class="card-media"><img src="/assets/placeholder-wide.svg" alt="" /></div>
+              <div class="card-body">
+                <div><div class="card-title">Project Gamma</div><div class="card-meta">Editorial • Animation</div></div>
+                <div class="card-pill">Case Study</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="container">© Studio 2025</div></footer>
+    <script type="module" src="./scripts/app.js"></script>
+  </body>
+  </html>
+
+

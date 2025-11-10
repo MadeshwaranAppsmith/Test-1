@@ -1,22 +1,15 @@
-// Lightweight Vite config for static multi-page site
-// Uses /src as root and outputs to /dist
+// Lightweight Vite config for static site
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-	root: 'src',
-	publicDir: '../assets',
+	root: '.',
+	publicDir: 'assets',
 	build: {
-		outDir: '../dist',
+		outDir: 'dist',
 		emptyOutDir: true,
 		rollupOptions: {
 			input: {
-				index: 'src/index.html',
-				projects: 'src/projects.html',
-				about: 'src/about.html',
-				contact: 'src/contact.html',
-				project1: 'src/project/project-alpha.html',
-				project2: 'src/project/project-beta.html',
-				project3: 'src/project/project-gamma.html'
+				index: './index.html'
 			}
 		}
 	},
@@ -24,5 +17,3 @@ export default defineConfig({
 		port: 5173
 	}
 });
-
-

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Alpha — Case Study</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.45/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <style>
+      .sticky-block { position: sticky; top: 96px; }
+      .case-hero { padding-top: 120px; }
+      .step { padding: 20vh 0; }
+      .mask-media { overflow: hidden; border-radius: var(--radius-lg); }
+      .kinetic { font-weight: 800; font-size: var(--font-size-xl); letter-spacing: -0.02em; }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="../index.html" aria-label="Studio Home">
+          <img src="/assets/logo.svg" alt="" width="22" height="22" />
+          <span>Studio</span>
+        </a>
+        <nav class="nav-links">
+          <a href="../projects.html" data-magnet data-cursor="Work">Work</a>
+          <a href="../about.html" data-magnet data-cursor="About">About</a>
+          <a href="../contact.html" class="badge" data-magnet data-cursor="Contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="lenis-root">
+      <section class="container case-hero">
+        <h1 class="hero-title"><span data-hero-title><span>Project</span> <span>Alpha</span></span></h1>
+        <p class="hero-subtitle" data-hero-subtitle>Scroll-driven storytelling with sticky media and kinetic type.</p>
+      </section>
+      <section class="section">
+        <div class="container grid">
+          <div class="sticky-block card card--half" aria-hidden="true">
+            <div class="card-media mask-media"><img src="/assets/placeholder-wide.svg" alt="" /></div>
+          </div>
+          <div class="card card--half">
+            <div class="card-body">
+              <div class="kinetic" data-reveal>Commerce reimagined</div>
+              <div class="card-meta" data-reveal>We prototyped and delivered motion-led components.</div>
+            </div>
+            <div class="step" data-reveal>
+              <div class="card-body">
+                <div>
+                  <div class="card-title">Discovery</div>
+                  <div class="card-meta">Rapid motion explorations and interaction mapping.</div>
+                </div>
+              </div>
+            </div>
+            <div class="step" data-reveal>
+              <div class="card-body">
+                <div>
+                  <div class="card-title">Build</div>
+                  <div class="card-meta">GSAP timelines, parallax, and accessible controls.</div>
+                </div>
+              </div>
+            </div>
+            <div class="step" data-reveal>
+              <div class="card-body">
+                <div>
+                  <div class="card-title">Launch</div>
+                  <div class="card-meta">Performance tuned with lazy media and reduced-motion.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container">© Studio 2025</div></footer>
+    <script type="module" src="../scripts/app.js"></script>
+  </body>
+  </html>
+
+

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A Cuberto-inspired creative studio site replica with smooth motion." />
+    <title>Studio — Cuberto-inspired</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <!-- GSAP and Lenis via CDN for instant run without install -->
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.45/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav" role="navigation" aria-label="Main">
+        <a class="logo" href="./index.html" aria-label="Studio Home">
+          <img src="/assets/logo.svg" alt="" width="22" height="22" />
+          <span>Studio</span>
+        </a>
+        <nav class="nav-links" aria-label="Site">
+          <a href="./projects.html" data-magnet data-cursor="View Work">Work</a>
+          <a href="./about.html" data-magnet data-cursor="About Us">About</a>
+          <a href="./contact.html" class="badge" data-magnet data-cursor="Contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="lenis-root">
+      <!-- HERO -->
+      <section class="hero container" data-snap>
+        <h1 class="hero-title" aria-label="We craft kinetic brand experiences">
+          <!-- Split into spans for GSAP stagger -->
+          <span data-hero-title>
+            <span>We</span> <span>craft</span> <span>kinetic</span> <span>brand</span> <span>experiences</span>
+          </span>
+        </h1>
+        <p class="hero-subtitle" data-hero-subtitle>
+          A creative developer studio specializing in expressive interactions and motion-led storytelling for ambitious
+          brands. This is a conceptual replica inspired by Cuberto—no proprietary content.
+        </p>
+        <div class="hero-cta" data-hero-cta>
+          <a class="btn btn-primary" href="./projects.html" data-magnet data-cursor="Explore">Explore Work</a>
+          <a class="btn btn-ghost" href="./about.html" data-magnet data-cursor="Our Studio">About the Studio</a>
+        </div>
+      </section>
+
+      <!-- PROJECTS PREVIEW -->
+      <section class="section" aria-labelledby="home-work">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="kicker">Featured</div>
+              <h2 id="home-work" class="section-title">Selected Work</h2>
+            </div>
+            <a class="btn btn-ghost" href="./projects.html" data-magnet data-cursor="All Projects">View all</a>
+          </div>
+          <div class="grid">
+            <!-- Card 1 -->
+            <a class="card card--wide" href="./project/project-alpha.html" aria-label="Project Alpha case study" data-reveal data-magnet data-cursor="Open">
+              <div class="card-media">
+                <img src="/assets/placeholder-wide.svg" alt="" width="1920" height="1080" loading="lazy" />
+              </div>
+              <div class="card-body">
+                <div>
+                  <div class="card-title">Project Alpha</div>
+                  <div class="card-meta">Kinetic commerce — Web, Motion</div>
+                </div>
+                <div class="card-pill">2025</div>
+              </div>
+            </a>
+            <!-- Card 2 -->
+            <a class="card card--half" href="./project/project-beta.html" aria-label="Project Beta case study" data-reveal data-magnet data-cursor="Open">
+              <div class="card-media">
+                <img src="/assets/placeholder-wide.svg" alt="" width="1920" height="1080" loading="lazy" />
+              </div>
+              <div class="card-body">
+                <div>
+                  <div class="card-title">Project Beta</div>
+                  <div class="card-meta">Immersive launch — WebGL, Narrative</div>
+                </div>
+                <div class="card-pill">2025</div>
+              </div>
+            </a>
+            <!-- Card 3 -->
+            <a class="card card--half" href="./project/project-gamma.html" aria-label="Project Gamma case study" data-reveal data-magnet data-cursor="Open">
+              <div class="card-media">
+                <img src="/assets/placeholder-wide.svg" alt="" width="1920" height="1080" loading="lazy" />
+              </div>
+              <div class="card-body">
+                <div>
+                  <div class="card-title">Project Gamma</div>
+                  <div class="card-meta">Editorial motion — CMS, Animation</div>
+                </div>
+                <div class="card-pill">2024</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="kicker">© Studio 2025</div>
+        <div>Inspired by the quality of motion at Cuberto, reimagined for demo.</div>
+      </div>
+    </footer>
+
+    <!-- App bootstrap after libraries -->
+    <script type="module" src="./scripts/app.js"></script>
+  </body>
+</html>
+
+

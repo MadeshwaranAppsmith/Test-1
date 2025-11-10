@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Gamma — Case Study</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.45/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="../index.html" aria-label="Studio Home">
+          <img src="/assets/logo.svg" alt="" width="22" height="22" />
+          <span>Studio</span>
+        </a>
+        <nav class="nav-links">
+          <a href="../projects.html" data-magnet data-cursor="Work">Work</a>
+          <a href="../about.html" data-magnet data-cursor="About">About</a>
+          <a href="../contact.html" class="badge" data-magnet data-cursor="Contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="lenis-root">
+      <section class="hero container">
+        <h1 class="hero-title"><span data-hero-title><span>Project</span> <span>Gamma</span></span></h1>
+        <p class="hero-subtitle" data-hero-subtitle>Editorial motion and scroll-triggered kinetic type.</p>
+      </section>
+      <section class="section">
+        <div class="container grid">
+          <div class="card card--half" data-reveal>
+            <div class="card-media"><img src="/assets/placeholder-wide.svg" alt="" /></div>
+            <div class="card-body"><div class="card-title">Chapter I</div><div class="card-meta">Setup</div></div>
+          </div>
+          <div class="card card--half" data-reveal>
+            <div class="card-media"><img src="/assets/placeholder-wide.svg" alt="" /></div>
+            <div class="card-body"><div class="card-title">Chapter II</div><div class="card-meta">Motion</div></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container">© Studio 2025</div></footer>
+    <script type="module" src="../scripts/app.js"></script>
+  </body>
+  </html>
+
+

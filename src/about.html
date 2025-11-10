@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — Studio</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.45/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav" role="navigation" aria-label="Main">
+        <a class="logo" href="./index.html" aria-label="Studio Home">
+          <img src="/assets/logo.svg" alt="" width="22" height="22" />
+          <span>Studio</span>
+        </a>
+        <nav class="nav-links" aria-label="Site">
+          <a href="./projects.html" data-magnet data-cursor="Work">Work</a>
+          <a href="./about.html" aria-current="page" class="badge" data-magnet data-cursor="About">About</a>
+          <a href="./contact.html" data-magnet data-cursor="Contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="lenis-root">
+      <section class="hero container">
+        <h1 class="hero-title"><span data-hero-title><span>Motion-first</span> <span>studio</span></span></h1>
+        <p class="hero-subtitle" data-hero-subtitle>
+          We combine design and engineering to build kinetic brand experiences. This page uses subtle micro-interactions
+          and accessible typography.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="kicker">Capabilities</div>
+              <h2 class="section-title">What we do</h2>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="card card--half" data-reveal>
+              <div class="card-body">
+                <div>
+                  <div class="card-title">Creative Engineering</div>
+                  <div class="card-meta">Web experiences with GSAP, WebGL, and robust architecture.</div>
+                </div>
+                <div class="card-pill">Dev</div>
+              </div>
+            </div>
+            <div class="card card--half" data-reveal>
+              <div class="card-body">
+                <div>
+                  <div class="card-title">Interaction Design</div>
+                  <div class="card-meta">Prototyping, motion systems, kinetic typography, micro-interactions.</div>
+                </div>
+                <div class="card-pill">Design</div>
+              </div>
+            </div>
+            <div class="card card--wide" data-reveal>
+              <div class="card-body">
+                <div>
+                  <div class="card-title">Performance & Accessibility</div>
+                  <div class="card-meta">Lighthouse-driven builds with focus states and reduced motion support.</div>
+                </div>
+                <div class="card-pill">Quality</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container">© Studio 2025</div></footer>
+    <script type="module" src="./scripts/app.js"></script>
+  </body>
+  </html>
+
+
